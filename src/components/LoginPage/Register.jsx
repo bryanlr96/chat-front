@@ -14,7 +14,7 @@ export default function Register() {
         e.preventDefault()
 
         try {
-            const response = await fetch("http://chat-backend-production-654b.up.railway.app/register", {
+            const response = await fetch("https://chat-backend-production-654b.up.railway.app/register", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

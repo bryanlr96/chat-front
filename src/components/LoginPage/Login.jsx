@@ -14,7 +14,7 @@ export default function Login() {
         e.preventDefault()
         
         try {
-            const response = await fetch("http://chat-backend-production-654b.up.railway.app/login", {
+            const response = await fetch("https://chat-backend-production-654b.up.railway.app/login", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
