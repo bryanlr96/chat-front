@@ -1,0 +1,95 @@
+.chat{
+    flex: 1;
+    height: 100vh;
+}
+
+.chatHeader{
+    width: 95%;
+    height: 10%;
+    margin: 0 auto 30px auto;
+    border-bottom: 2px solid black;
+    display: flex;
+    gap: 30px;
+    padding: 2vh 0;
+    align-items: center;
+}
+
+.chatContainer {
+    width: 95%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 30px auto;
+    border: 1px solid black;
+    overflow-y: scroll;
+    scrollbar-width: 0;
+    padding: 10px;
+    gap: 20px;
+}
+
+.chatContainer::-webkit-scrollbar {
+    width: 0px;
+}
+
+.chatDisplay{
+    margin: 0 auto;
+    height: 10vh;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.chatDisplay button {
+    display: flex;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 13px;
+  }
+
+  .chatDisplay input {
+    flex: 1; /* Permite que el input ocupe el espacio disponible */
+    height: 35px;
+    padding: 0 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+
+  .recived,
+  .emit{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    background-color: #f0f2f5;
+    padding: 10px;
+    gap: 10px;
+    text-align: left;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .emit{
+    text-align: right;
+    align-self: flex-end;
+  }
+
+  .message{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .hour{
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+  }

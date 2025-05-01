@@ -1,0 +1,35 @@
+.sidebar{
+    width: 400px;
+    height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.userCard{
+    width: 85%;
+    height: 10%;
+    margin: 0 auto 30px auto;
+    border-bottom: 2px solid black;
+    display: flex;
+    gap: 30px;
+    padding: 2vh 0;
+    align-items: center;
+}
+
+.userPhoto{
+    min-width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;}
+
+.no-margin{
+    margin: 0;
+}
+.text-left{
+    text-align: left;
+}

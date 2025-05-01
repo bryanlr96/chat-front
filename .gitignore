@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# Vercel files
+.vercel/
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# IDE files (VS Code, JetBrains, etc.)
+.vscode/
+.idea/
+
+# Npm package lock
+package-lock.json
