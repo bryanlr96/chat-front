@@ -15,10 +15,10 @@ export const ChatProvider = ({ children }) => {
       const fetchUser = async () => {
         try {
           console.log("-----------------------------------------------")
-          console.log("variable de entorno url: " + process.env.REACT_APP_url_back)
+          console.log("variable de entorno url: " + import.meta.env.VITE_url_back)
           console.log("-----------------------------------------------")
         
-          const response = await fetch(`${process.env.REACT_APP_url_back}/reload`);
+          const response = await fetch(`${import.meta.env.VITE_url_back}/reload`);
           if (!response.ok) throw new Error("Error al obtener usuario");
   
           const data = await response.json();
@@ -41,7 +41,7 @@ export const ChatProvider = ({ children }) => {
     useEffect(()=>{
       //solo iniciamos la conexion si tenemos usuario
       if(state.user){
-        const newSocket = io(process.env.REACT_APP_url_back, {
+        const newSocket = io(import.meta.env.VITE_url_back, {
           query: {userId: state.user.id}
         })
 
