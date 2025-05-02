@@ -14,7 +14,7 @@ export const ChatProvider = ({ children }) => {
     useEffect(() => {
       const fetchUser = async () => {
         try {
-          const response = await fetch("https://chat-backend-production-654b.up.railway.app/reload");
+          const response = await fetch(`${process.env.REACT_APP_url_back}/reload`);
           if (!response.ok) throw new Error("Error al obtener usuario");
   
           const data = await response.json();
@@ -37,7 +37,7 @@ export const ChatProvider = ({ children }) => {
     useEffect(()=>{
       //solo iniciamos la conexion si tenemos usuario
       if(state.user){
-        const newSocket = io('https://chat-backend-production-654b.up.railway.app', {
+        const newSocket = io(process.env.REACT_APP_url_back, {
           query: {userId: state.user.id}
         })
 
