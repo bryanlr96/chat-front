@@ -16,7 +16,6 @@ export const ChatProvider = ({ children }) => {
         try {
           console.log("------------------------------------------------------------")
           console.log("variable de entorno url: " + process.env.REACT_APP_url_back)
-          console.log("------------------------------------------------------------")
 
         
           const response = await fetch(`${process.env.REACT_APP_url_back}/reload`);
