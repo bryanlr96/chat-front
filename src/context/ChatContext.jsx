@@ -14,9 +14,9 @@ export const ChatProvider = ({ children }) => {
     useEffect(() => {
       const fetchUser = async () => {
         try {
-          console.log("------------------------------------------------------------")
+          console.log("-----------------------------------------------")
           console.log("variable de entorno url: " + process.env.REACT_APP_url_back)
-
+          console.log("-----------------------------------------------")
         
           const response = await fetch(`${process.env.REACT_APP_url_back}/reload`);
           if (!response.ok) throw new Error("Error al obtener usuario");
